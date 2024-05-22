@@ -10,25 +10,7 @@ Load transaction data: Loads transaction data from CSV files every 5 minutes.
 Load product reference data: Loads static product reference data from a CSV file.
 API Endpoints: Provides RESTful endpoints to retrieve individual transactions and summaries by product and manufacturing city.
 Concurrency: Designed to handle concurrent requests without blocking data processing.
-Project Structure
-css
-Copy code
-project-root/
-│
-├── app/
-│   ├── __init__.py
-│   ├── api.py
-│   ├── data_loader.py
-│   └── generate_transactions.py
-│
-├── reference/
-│   └── ProductReference.csv
-│
-├── transactions/
-│   └── [Generated transaction files will be stored here]
-│
-├── README.md
-└── requirements.txt
+
 Installation
 Clone the repository:
 
