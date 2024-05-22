@@ -75,12 +75,20 @@ Retrieve a summary of transactions by manufacturing city for the last N days.
 
 Concurrency and Scalability
 Concurrency: The application uses FastAPI, which is built on top of Starlette and supports asynchronous endpoints, enabling it to handle multiple requests concurrently.
+
+
 Non-blocking I/O: The transaction loading process runs in a separate thread to ensure that API requests are not blocked by data processing.
 Scalability: Designed to handle large volumes of transaction files and high concurrency. Additional scaling can be achieved by deploying the application in a containerized environment and using load balancers.
+
+
 Error Handling
 The API endpoints provide meaningful error messages and HTTP status codes to indicate issues such as missing transactions (404 Not Found).
+
+
 Logging
 The application logs important events, such as loading data and processing transactions, using Python’s built-in logging module. This helps in monitoring and debugging.
+
+
 Future Improvements
 Persistent Storage: Integrate a database for persistent storage of transaction data.
 Enhanced Security: Add authentication and authorization for API endpoints.
